@@ -1,0 +1,18 @@
+[Unit]
+# Auto-generated, DO NOT EDIT
+Description=Service for snap application nextcloud.mdns-publisher
+Requires=snap-nextcloud-6916.mount
+Wants=network-online.target
+After=snap-nextcloud-6916.mount network-online.target
+X-Snappy=yes
+
+[Service]
+ExecStart=/usr/bin/snap run nextcloud.mdns-publisher
+SyslogIdentifier=nextcloud.mdns-publisher
+Restart=always
+WorkingDirectory=/var/snap/nextcloud/6916
+TimeoutStopSec=30
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

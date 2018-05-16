@@ -1,0 +1,1 @@
+V	190430161111Z		01	unknown	/C=AU/ST=Tartumaa/L=Tartu/O=System Administration course/OU=Institute of Computer Science/CN=*.rohin.est/emailAddress=debian@rohin.est

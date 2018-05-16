@@ -1,0 +1,10 @@
+# Created by cloud-init v. 0.7.9 on Fri, 24 Nov 2017 13:57:58 +0000
+
+# User rules for debian
+debian ALL=(ALL) NOPASSWD:ALL
+
+# User rules for debian
+debian ALL=(ALL) NOPASSWD:ALL
+
+# User rules for debian
+debian ALL=(ALL) NOPASSWD:ALL

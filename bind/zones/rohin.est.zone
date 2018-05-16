@@ -1,0 +1,21 @@
+;
+; BIND data file for local zone teacher.est;
+$TTL    15M
+@       IN      SOA     ns1.rohin.est. root.rohin.est. (
+                     2012020207         ; Serial
+                            15M         ; Refresh
+                             5M         ; Retry
+                           120M         ; Expire
+                            600 )       ; Negative Cache TTL
+@                   IN      NS      ns1
+@                   IN      MX  10  mail
+@                   IN      A       172.17.65.156
+ns1                 IN      A       172.17.65.156
+sambath-kumar-vm    IN      A       172.17.65.156
+mail                IN      A       172.17.65.156
+www                 IN      CNAME   sambath-kumar-vm
+webmail             IN      CNAME   sambath-kumar-vm
+monitor             IN      CNAME   sambath-kumar-vm
+info                IN      CNAME   sambath-kumar-vm
+test                IN      CNAME   sambath-kumar-vm
+nextcloud           IN      CNAME   sambath-kumar-vm

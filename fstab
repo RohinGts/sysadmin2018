@@ -1,0 +1,5 @@
+# /etc/fstab: static file system information.
+UUID=b59bcc84-b9fe-4f60-9ce9-680d09e2ca3b	/	ext4	errors=remount-ro	0	1
+/dev/vdb1       /mnt/vdb1       ext4    errors=remount-ro,usrquota,grpquota 0 1
+  /mnt/vdb1 /media/vdb1 none bind 0 0 
+

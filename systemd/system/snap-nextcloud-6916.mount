@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount unit for nextcloud
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/nextcloud_6916.snap
+Where=/snap/nextcloud/6916
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

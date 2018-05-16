@@ -1,0 +1,13 @@
+$ORIGIN 65.17.172.in-addr.arpa.   ; Zone starting point in the name-space tree
+                     ; (if skipped - the origin is inferred by the DNS server based on
+                     ; zone declaration in name.conf.local file
+$TTL 15M             ; Default expiration time for all resources
+@ IN SOA ns.rohin.est. root.rohin.est.(
+	 2012020103       ; Serial
+		15M       ; Refresh (15 minutes)
+		5M        ; Retry (5 minutes)
+		604800    ; Expire (7 days in seconds)
+		600 )     ; Negative Cache TTL
+@               IN      NS      ns1.rohin.est.       ; Name Server for ns.sambath-kumar-vm.rohin.est
+156             IN      PTR     ns1.rohin.est.       ; 172.17.65.156 has name ns.sambath-kumar-vm.rohin.est
+162             IN      PTR     teacher-vm.teacher.est.           ;172.17.65.162 has name teacher-vm.teacher.est
